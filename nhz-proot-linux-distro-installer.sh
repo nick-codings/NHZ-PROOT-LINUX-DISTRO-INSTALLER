@@ -116,14 +116,14 @@ echo ${Blue}"Please put your distro name"
 echo ${Blue}"If you put 'ubuntu', your login script will be"
 echo ${Blue}"'bash ubuntu.sh' "
 echo ""
-sleep 3
+sleep 0.5
 echo ${Red}"Distro name?"${White}
 read dm
 sleep 1
 echo ""
 echo ${Yellow}"Your Distro Name is $dm and your login command is
 'bash $dm.sh"
-sleep 2 ; cd
+sleep 3 ; cd
 folder=$dm-fs
 if [ -d "$folder" ]; then
         echo ${Red}"Existing directory found, are you sure to remove it? (y or n)"${Green}
